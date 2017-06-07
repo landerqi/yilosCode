@@ -78,12 +78,32 @@ $ ls -al ~/.ssh
 
 ### 第四步： 把你的 SSH key 添加到你的 github 账号
 用你的 SSH key 配置 github 账号:
-把 SSH key 粘贴到剪切板. 如果你的 key 名字为 `id_dsa.pub`, `id_ecdsa.pub` 或者 `id_ed25519.pub`, 那么把下面指令的文件名`id_rsa.pub`改成和你的 key 相匹配的名字:	``` bash
+把 SSH key 粘贴到剪切板. 如果你的 key 名字为 `id_dsa.pub`, `id_ecdsa.pub` 或者 `id_ed25519.pub`, 那么把下面指令的文件名`id_rsa.pub`改成和你的 key 相匹配的名字:
+	``` bash
 	$ clip < ~/.ssh/id_rsa.pub
+	# Copies the contents of the id_rsa.pub file to your clipboard
+
+	# macOs
+	$ pbcopy < ~/.ssh/id_rsa.pub
+	# Copies the contents of the id_rsa.pub file to your clipboard
+
+	# GNU/Linux (requires the xclip package)
+	xclip -sel clip < ~/.ssh/id_rsa.pub
+	# Copies the contents of the id_rsa.pub file to your clipboard
+
+	# Windows Command Line
+	type %userprofile%\.ssh\id_rsa.pub | clip
+	# Copies the contents of the id_rsa.pub file to your clipboard
+
+	# Git Bash on Windows / Windows PowerShell
+	cat ~/.ssh/id_rsa.pub | clip
 	# Copies the contents of the id_rsa.pub file to your clipboard
 	```
 
-在github账号设置里面找到add ssh key; title随意添写，key复制进去。
+__如果手动复制，要注意复制的key是`ssh-rsa`开头,`你的email`结尾__
+
+
+__在github账号设置里面找到add ssh key; title随意添写，key复制进去。__
 
 
 ### 第五步： 测试连接
@@ -120,6 +140,22 @@ __之前博客从github迁移到了gitcafe, gitcafe之后被coding收购, 所以
 ssh: connect to host coding.net port 22: Connection refused
 ```
 __一直在搜索解决方案，没有找到好的解决办法，最后发现coding的page服务已经开始按天收费了，所以还是默默的把blog迁回了github，毕竟github是最稳定的。__
+
+### 如果要配置多个ssh key
+__需在.ssh/目录下增加一个config文件__
+`.ssh/config` :
+
+``` bash
+Host myshortname realname.example.com
+    HostName realname.example.com
+    IdentityFile ~/.ssh/realname_rsa # private key for realname
+    User remoteusername
+
+Host myshortname git.yypm.com
+    HostName git.yypm.com
+    IdentityFile ~/.ssh/feb-gitlab_rsa
+    User xieqi
+```
 
 更多信息
 For more information, see [Changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/).
