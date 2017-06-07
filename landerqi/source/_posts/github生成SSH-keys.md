@@ -79,6 +79,7 @@ $ ls -al ~/.ssh
 ### 第四步： 把你的 SSH key 添加到你的 github 账号
 用你的 SSH key 配置 github 账号:
 把 SSH key 粘贴到剪切板. 如果你的 key 名字为 `id_dsa.pub`, `id_ecdsa.pub` 或者 `id_ed25519.pub`, 那么把下面指令的文件名`id_rsa.pub`改成和你的 key 相匹配的名字:
+
 	``` bash
 	$ clip < ~/.ssh/id_rsa.pub
 	# Copies the contents of the id_rsa.pub file to your clipboard
