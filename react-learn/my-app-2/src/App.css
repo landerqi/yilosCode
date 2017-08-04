@@ -27,6 +27,19 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px; }
 
+.App-input {
+  width: 100px; }
+
+.App-textarea-wrap {
+  width: 100px;
+  overflow: scroll;
+  margin-top: 300px; }
+
+.App-textarea {
+  overflow: scroll;
+  width: 20000px;
+  pointer-events: default; }
+
 .App-header {
   padding: 20px; }
 
