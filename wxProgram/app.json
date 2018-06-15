@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wawaIndex/wawaIndex"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffdd00",
+    "navigationBarTitleText": "landerqi",
+    "navigationBarTextStyle": "black"
+  }
+}
