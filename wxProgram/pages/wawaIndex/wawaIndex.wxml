@@ -1,0 +1,9 @@
+<!--pages/wawaIndex/wawaIndex.wxml-->
+<view class="container">
+  <block wx:for-items="{{listData}}" wx:key="{{item.aid}}">
+    <view class="doll--list">
+      <image class="doll--list__img" src="{{item.img}}"></image>
+      <text class="doll--list__name">{{item.name}}</text>
+    </view>
+  </block>
+</view>
