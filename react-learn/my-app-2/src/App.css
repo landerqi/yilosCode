@@ -28,7 +28,8 @@
   height: 80px; }
 
 .App-header {
-  padding: 20px; }
+  padding: 20px;
+  color: blue; }
 
 .App-intro {
   font-size: large; }
