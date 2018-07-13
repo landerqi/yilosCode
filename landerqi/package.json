@@ -19,5 +19,9 @@
     "hexo-renderer-stylus": "^0.2.0",
     "hexo-server": "^0.1.2",
     "hexo-toc": "0.0.6"
+  },
+  "scripts": {
+    "dev": "hexo s --port=1234",
+    "push": "hexo g -d"
   }
 }
