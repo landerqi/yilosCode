@@ -25,3 +25,12 @@ tags: [git, 工具]
 1. To delete a local branch: git branch -d the_local_branch
 1. To remove a remote branch: git push origin --delete the_remote_branch
 1. 将你的git协议由https变为ssh: git remote set-url origin git@github.com:youraccount/yourproject.git
+1. 关联到新的 git 仓库地址:
+  如果有`.git`文件夹，先 `rm -rf .git`
+  ```
+  git init
+  git remote add origin https://github.com/{your_project}.git
+  git add .
+  git commit -m "Initial commit"
+  git push -u origin master
+  ```
