@@ -24,3 +24,4 @@ tags: [git, 工具]
 1. 新建本地分支，将远程分支提取出来： git checkout -t origin/2.0.0
 1. To delete a local branch: git branch -d the_local_branch
 1. To remove a remote branch: git push origin --delete the_remote_branch
+1. 将你的git协议由https变为ssh: git remote set-url origin git@github.com:youraccount/yourproject.git
