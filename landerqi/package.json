@@ -22,6 +22,7 @@
   },
   "scripts": {
     "dev": "hexo s --port=1233",
-    "push": "hexo g -d"
+    "push": "hexo g -d",
+    "clean": "hexo clean"
   }
 }
