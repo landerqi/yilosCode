@@ -105,6 +105,14 @@ sitemap:
 toc:
   maxDepth: 3
 
+# archive 分页
+archive_generator:
+  per_page: 0
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
+
 ## Themes: https://hexo.io/themes/主题配置
 theme: lightqi
 # Deployment 部署配置，将本地public目录也就是网站部署到服务器上的配置
