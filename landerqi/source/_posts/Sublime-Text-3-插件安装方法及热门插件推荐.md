@@ -49,12 +49,12 @@ Emmet 其前身是 Zen Coding。它让编写 HTML 代码变得简单。Emmet 的
 <br>
 
 ###[Theme – Soda](https://packagecontrol.io/packages/Theme%20-%20Soda) ([GitHub](https://github.com/buymeasoda/soda-theme))
-![](http://7xjl5i.com1.z0.glb.clouddn.com/qdSoda-Dark.png)
-![](http://7xjl5i.com1.z0.glb.clouddn.com/qdSoda-Light.png)
+![](http://landerqi.lefzs.com/qdSoda-Dark.png)
+![](http://landerqi.lefzs.com/qdSoda-Light.png)
 安装后你还需要在你的配置文件（菜单 Preferences -> Settings - User）中加入"theme": "Soda Light.sublime-theme" 或 "theme": "Soda Dark.sublime-theme"。要达到图中的效果，你还需要下载与之搭配的 color scheme。
 
 如果你喜欢 Soda Dark 和 Monokai，我建议你使用 [Monokai Extended](https://sublime.wbond.net/packages/Monokai%20Extended) ([GitHub](https://github.com/jonschlinkert/sublime-monokai-extended))。这个 color scheme 是 Monokai Soda 的增强，如果再配合 [Markdown Extended](https://sublime.wbond.net/packages/Markdown%20Extended) ([GitHub](https://github.com/jonschlinkert/sublime-markdown-extended))，将大大改善 Markdown 的语法高亮。
-![](http://7xjl5i.com1.z0.glb.clouddn.com/qdMonokai-Extended-Markdown-Extended.png)
+![](http://landerqi.lefzs.com/qdMonokai-Extended-Markdown-Extended.png)
 <br>
 
 ###JS Format([Github](https://github.com/jdc0589/JsFormat))

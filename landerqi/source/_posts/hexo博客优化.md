@@ -54,7 +54,7 @@ __四大搜索站长平台地址__：
     (function() {
       var hm = document.createElement("script");
       hm.src = "//hm.baidu.com/hm.js?";
-      var s = document.getElementsByTagName("script")[0]; 
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
@@ -103,8 +103,8 @@ __四大搜索站长平台地址__：
         "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "t163"]
     }
 };
-with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=857b0ced057ae80679bef08f6ee865cf.js?cdnversion=' + ~ ( - new Date() / 36e5)]; 
-</script>	
+with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=857b0ced057ae80679bef08f6ee865cf.js?cdnversion=' + ~ ( - new Date() / 36e5)];
+</script>
 	```
 
 最后美化一下样式，找到`themes\lightqi\source\css\_partial\archive.styl`加入出下代码：
@@ -145,7 +145,7 @@ duoshuo_shortname: landerqi(你站点的short_name)
 ##绑定自己的域名
 - 首页你得拥有自己的域名，你可以到万网，或Godaddy这些域名提供商上挑选自己喜欢的域名。
 - 注册DNSPOD，用DNSPOD解析域名：
-![](http://7xjl5i.com1.z0.glb.clouddn.com/QQ图片20150623144211.png)
+![](http://landerqi.lefzs.com/QQ图片20150623144211.png)
 记录类型选CNAME。
 __如果是在万网或Godaddy上购买的域名，需要修改DNS地址为`f1g1ns1.dnspod.net`和`f1g1ns1.dnspod.net`，DNSPOD才可以成功解析。__
 - 在`source`目录下新建一个名为CNAME的文本文件，里面写入你要绑定的域名，比如`landerqi.com`。
