@@ -1,9 +1,9 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.9.0"
   },
   "dependencies": {
     "hexo": "^3.1.0",
@@ -22,7 +22,9 @@
   },
   "scripts": {
     "dev": "hexo s --port=1233",
-    "push": "hexo g -d",
+    "publish": "hexo g -d",
+    "generate": "hexo g",
+    "new": "hexo new",
     "clean": "hexo clean"
   }
 }
